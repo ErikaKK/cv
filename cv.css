@@ -1,0 +1,239 @@
+main {
+  width: 100%;
+  position: relative;
+}
+
+.cv-section {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.profile-card {
+  display: flex;
+  box-shadow: 0 0 15px -3px rgba(0, 0, 0, 0.75);
+}
+
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  background-color: rgb(var(--secondary-color));
+  flex: 1 1 0;
+  justify-content: space-between;
+  border: none;
+
+  align-items: stretch;
+}
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.profile-left img {
+  margin-top: 16px;
+  width: 200px;
+
+  border-radius: 50%;
+}
+#profile-social {
+  background-color: rgb(var(--light-color));
+}
+.profile-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px;
+  flex: 1 1 0;
+  background-color: rgb(var(--light-color));
+}
+.name {
+  color: rgb(var(--primary-color));
+  display: inline-block;
+}
+.cv-section.section1 {
+  background-image: url("/images/leaves2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+.cv-section.section2 {
+  background-color: rgb(var(--secondary-color));
+  max-width: 100%;
+}
+.btn-download {
+  color: rgb(var(--dark-color));
+  border: 1.5px solid rgb(var(--primary-color));
+  padding: 10px 20px;
+
+  cursor: pointer;
+}
+.btn-download a {
+  color: rgb(var(--dark-color));
+  text-decoration: none;
+}
+.btn-download:hover {
+  background-color: rgba(var(--secondary-color), 0.3);
+}
+.btn-download:hover a {
+  color: rgb(var(--primary-color));
+}
+.btn-submit {
+  width: 100%;
+  color: rgb(var(--light-color));
+  border: 1.5px solid rgb(var(--primary-color));
+  padding: 10px 20px;
+  background-color: rgb(var(--primary-color));
+  cursor: pointer;
+}
+.btn-submit:hover {
+  background-color: rgb(var(--secondary-color));
+  color: rgb(var(--primary-color));
+}
+#skillList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.progress .progress-bar {
+  background-color: rgb(var(--primary-color));
+}
+
+.dotIcon {
+  color: rgb(var(--primary-color));
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-right: 2px solid rgb(var(--primary-color));
+  padding: 0 20px 0 0;
+}
+.portfolio-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-left: 2px solid rgb(var(--primary-color));
+  padding: 0 0 0 20px;
+}
+
+.experienceCompanyAndDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contactCard {
+  padding: 16px;
+  background-color: rgb(var(--secondary-color));
+  border: none;
+}
+form {
+  width: 100%;
+  margin-top: 16px;
+}
+
+@media (max-width: 992px) {
+  #experienceList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .profile-card {
+    flex-direction: column;
+    margin: 0 16px;
+  }
+  .profile-left {
+    padding: 16px 0;
+  }
+  .portfolio-item {
+    grid-template-columns: 1fr;
+  }
+  .dotIcon {
+    display: none;
+  }
+  .portfolio-left {
+    border: 1.5px solid rgb(var(--primary-color));
+    padding: 16px;
+  }
+  .portfolio-right {
+    border: 1.5px solid rgb(var(--primary-color));
+    padding: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  nav {
+    scroll-snap-align: start;
+  }
+  .cv-section {
+    scroll-snap-align: start;
+  }
+
+  footer {
+    scroll-snap-align: end;
+    position: relative;
+  }
+  .cv-popover-content {
+    max-width: 800px;
+  }
+}
+
+.cv-popover {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(var(--secondary-color), 0.9);
+}
+
+.cv-popover.show {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.cv-popover-content {
+  position: relative;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.cv-popover-section h2 {
+  border-bottom: 1.5px solid rgba(var(--dark-color), 0.5);
+}
+
+.spaceBetween-div {
+  display: flex;
+  justify-content: space-between;
+}
