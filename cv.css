@@ -60,7 +60,7 @@ main {
   display: inline-block;
 }
 .cv-section.section1 {
-  background-image: url("/images/leaves2.jpeg");
+  background-image: url("images/leaves2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
