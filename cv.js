@@ -17,6 +17,9 @@ const skills = [{
     name: "Django Rest Framework",
     level: 60,
 }, {
+  name: "JAVA",
+  level: 75,
+},{
     name: "SQL",
     level: 90,
 }, {name: "Python",
@@ -43,6 +46,14 @@ skillContainer.appendChild(item);
 });
 
 const experiences = [
+  {
+    title: "Full Stack Developer",
+    company: "SpotifyDash",
+    startDate: "4/2025",
+    endDate: "5/2025",
+    description: "Developed and maintained a web application using Flask.",
+    link:"https://github.com/ErikaKK/cits5505_group_project"
+},
     {
         title: "Backend Developer",
         company: "Coders for Causes",
@@ -59,14 +70,7 @@ const experiences = [
         description: "Developed and maintained RESTful APIs using Django Rest Framework.",
         link: "https://github.com/codersforcauses/penni"
     },
-    {
-        title: "Web Developer",
-        company: "Wei's",
-        startDate: "5/2024",
-        endDate: "7/2024",
-        description: "Developed and maintained internal tools using Python and SQL.",
-        link:"https://github.com/ErikaKK/weis"
-    },
+   
 ];
 
 
