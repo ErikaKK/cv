@@ -52,7 +52,7 @@ const experiences = [
     startDate: "4/2025",
     endDate: "5/2025",
     description: "Developed and maintained a web application using Flask.",
-    link:"https://github.com/ErikaKK/cits5505_group_project"
+    link:"https://github.com/ErikaKK/SpotifyDash"
 },
     {
         title: "Backend Developer",
